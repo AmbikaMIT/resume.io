@@ -1,14 +1,14 @@
-function showTab(event, tabId) {
-    let tabs = document.querySelectorAll('.tab');
-    let contents = document.querySelectorAll('.tab-content');
+function openTab(event, tabId) {
+    let tabContents = document.querySelectorAll('.tab-content');
+    let tabButtons = document.querySelectorAll('.tab-button');
     
-    tabs.forEach(tab => tab.classList.remove('active'));
-    event.currentTarget.classList.add('active');
+    tabContents.forEach(tab => tab.classList.remove('active'));
+    tabButtons.forEach(button => button.classList.remove('active'));
     
-    contents.forEach(content => content.classList.remove('active'));
     document.getElementById(tabId).classList.add('active');
+    event.currentTarget.classList.add('active');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".tab").click();
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.tab-button').click();
 });
