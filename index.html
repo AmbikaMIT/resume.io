@@ -3,46 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambika's Resume</title>
+    <title>Ambika Kalbandi - Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Ambika kalbandi</h1>
+        <h1>Ambika Kalbandi</h1>
         <p>Assistant Professor, CSE | MIT Academy of Engineering, Pune</p>
-    </div>
+
         <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'summary')">Summary</button>
+            <button class="tab-button active" onclick="openTab(event, 'about')">About</button>
+            <button class="tab-button" onclick="openTab(event, 'research')">Research</button>
+            <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
             <button class="tab-button" onclick="openTab(event, 'skills')">Skills</button>
-            <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
-            <button class="tab-button" onclick="openTab(event, 'strengths')">Strengths</button>
+            <button class="tab-button" onclick="openTab(event, 'roles')">Academic Roles</button>
+            <button class="tab-button" onclick="openTab(event, 'publications')">Publications</button>
         </div>
-        
-        <div class="tab-content active" id="summary">
-            <h2>Professional Summary</h2>
-            <p>Over 3+ years of extensive experience in software development using Java Technology. Worked as a Java Developer at Hexaware Technologies and Blue Rose Technologies. Currently working as an Assistant Professor at MITAOE Alandi.</p>
+
+        <div class="tab-content active" id="about">
+            <h2>About</h2>
+            <p>ME, SPPU Pune</p>
+            <p>Over 3+ years of extensive experience in software development using Java Technology. Worked as a Java Developer at Hexaware Technologies and Blue Rose Technologies. Currently working as an Assistant Professor at MITAOE Alandi</p>
         </div>
-        
-        <div class="tab-content" id="skills">
+		
+		<div class="tab-content" id="skills">
+            <h2>Research Domain</h2>
             <h2>Skills</h2>
             <ul>
+            <ul>
+                <li>Machine Learning, Deep Learning, Computer Vision</li>
                 <li>Spring Boot, Spring Rest API, Spring MVC</li>
                 <li>Junit, Swagger UI, Postman</li>
                 <li>MySQL, Maven</li>
                 <li>Apache Tomcat, GitHub, GitLab</li>
                 <li>Cloud: AWS, Azure</li>
+                <li>Quantum Neural Network, Soft Computing</li>
                 <li>CI/CD: Jenkins</li>
             </ul>
+            </ul>
         </div>
-        
+       
+
+        <div class="tab-content" id="projects">
+            <h2>Projects Completed</h2>
+            <ul>
+                <li>Traffic Control system using VANET</li>
+                <li>Secured File Sharing in cloud computing</li>
+                <li>Share Market Prediction using Machine Learning algorithms</li>
+                <li>clients Projects based on java technologies</li>
+            </ul>
+        </div>
+
+
         <div class="tab-content" id="experience">
             <h2>Work Experience</h2>
             <p><strong>Hexaware Technologies</strong> (Nov 2021 - Feb 2024): Sr. Technical Analyst</p>
             <p><strong>BlueRose Technologies Pvt. Ltd.</strong> (Apr 2024 - Aug 2024): Sr. Software Engineer</p>
             <p><strong>MITAOE Alandi</strong> (Dec 2024 - Present): Assistant Professor</p>
         </div>
-        
-        <div class="tab-content" id="strengths">
+
+         <div class="tab-content" id="strengths">
             <h2>Key Strengths</h2>
             <ul>
                 <li>Strong Java development skills</li>
@@ -51,7 +72,7 @@
             </ul>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
